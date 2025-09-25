@@ -14,9 +14,9 @@
 - Business rules and logic
 - Data aggregations
 
-  ## Load
-  - Processing types: batching, stream
-  - Load methods:
-      - Full load: truncate and insert, upsert, drop, create, insert
-      - Incremental load: upsert, append, merge
-  - SCD (Slowly Changing Dimensions): SCD 0 (no historization), SCD 1 (overwrite), SCD 2 (historization), SCD _
+## Load
+- Processing types: batching, stream
+- Load methods:
+    - Full load: truncate and insert, upsert, drop, create, insert
+    - Incremental load: upsert, append, merge
+- SCD (Slowly Changing Dimensions): SCD 0 (no historization), SCD 1 (overwrite), SCD 2 (historization), SCD _
