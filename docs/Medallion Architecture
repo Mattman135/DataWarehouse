@@ -1,1 +1,22 @@
-|Column test | hej igen |
+                    | Bronze layer           | Silver layer                | Gold layer                  |
+--------------------------------------------------------------------------------------------------------------
+Definition          |      Raw unprocessed   |                             |   
+                    | data from data sources | Clean and standardized data | Business ready data         | 
+--------------------------------------------------------------------------------------------------------------
+Objective           | Traceability           |                             | Provide data to be consumed 
+                    | and debugging          | Prepare data for analysis   | for reporting and analytics | 
+--------------------------------------------------------------------------------------------------------------
+Object type         | Tables                 | Tables                      | Views                       | 
+--------------------------------------------------------------------------------------------------------------
+Load method         | Full load              | Full load                   | None                        | 
+--------------------------------------------------------------------------------------------------------------
+Data transformation | Unmodified             | Cleaning,                   | Integration,
+                    |                        | standardization,            | aggregation,
+                    |                        | normalization,              | business logic and rules
+                    |                        | derive columns,             |
+                    |                        | enrichement                 |
+--------------------------------------------------------------------------------------------------------------
+Data modeling       | Unmodified             | Unmodified                  | Start schema,
+                    |                        |                             | Aggregated objects, Flat tables 
+--------------------------------------------------------------------------------------------------------------
+Target audience     | Data engineers         | Data analysts and engineers | Data analysts, Business users | 
