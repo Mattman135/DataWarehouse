@@ -1,6 +1,10 @@
 /*
 ===============================================================================
 DDL Script: Create Bronze Tables
+
+DDL (Data Definition Language)
+SQL commands used to define, modify and remove database structures (schemas, tables, views, indexes, etc.)
+
 ===============================================================================
 Script Purpose:
     This script creates tables in the 'bronze' schema, dropping existing tables 
