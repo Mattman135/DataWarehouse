@@ -29,11 +29,7 @@ The project uses the so called Medallion Architecture with Bronze, Silver and Go
 Skills used in the project
 - ETL / ELT processing
 - SQL Development
-- Data Architect
-- Data Engineering
-- ETL Pipeline Developer
-- Data Modeling
-- Data Analytics
+- Data Architecture
 
 What is a data warehouse?
 - It is a digital storing system used to extract, transform and load data from several different sources. The data can be used by the company to make business decisions.
@@ -103,7 +99,7 @@ The Gold Layer is the business-level data representation, structured to support 
 
 # **Naming Conventions**
 
-This document outlines the naming conventions used for schemas, tables, views, columns, and other objects in the data warehouse.
+This section outlines the naming conventions used for schemas, tables, views, columns, and other objects in the data warehouse.
 
 ## **General Principles**
 
@@ -179,4 +175,4 @@ This document outlines the naming conventions used for schemas, tables, views, c
 - Gold layer includes one script (ddl). Ddl creates view tables from the silver layer to produce cleaned, enriched and business ready datasets.
 
 ## **Credit**
-- Data with Baraa on Youtube
+- [Data with Baraa](#https://www.youtube.com/watch?v=9GVqKuTVANE&list=WL&index=25&t=3214s) on Youtube
