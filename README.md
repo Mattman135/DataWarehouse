@@ -3,15 +3,19 @@
 ## **Table of Contents**
 
 1. [Project Overview](#project-overview)
-2. [General Principles](#general-principles)
-3. [Table Naming Conventions](#table-naming-conventions)
+2. [Data Catalog for Gold Layer](#data-catalog-for-gold-layer)
+3. [Naming Conventions](#naming-conventions)
+4. [General Principles](#general-principles)
+5. [Table Naming Conventions](#table-naming-conventions)
    - [Bronze Rules](#bronze-rules)
    - [Silver Rules](#silver-rules)
    - [Gold Rules](#gold-rules)
-4. [Column Naming Conventions](#column-naming-conventions)
+6. [Column Naming Conventions](#column-naming-conventions)
    - [Surrogate Keys](#surrogate-keys)
    - [Technical Columns](#technical-columns)
-5. [Stored Procedure](#stored-procedure-naming-conventions)
+7. [Stored Procedure](#stored-procedure-naming-conventions)
+8. [Summary](#summary)
+9. [Credit](#credit)
 ---
 
 ## **Project Overview**
@@ -34,14 +38,7 @@ Skills used in the project
 What is a data warehouse?
 - It is a digital storing system used to extract, transform and load data from several different sources. The data can be used by the company to make business decisions.
 
-# Summary
-- Three folders (bronze, silver, gold) and one file to initialize a database.
-- Bronze layer includes two scripts (ddl and proc load). Ddl creates schemas and proc load inserts data into schemas from external csv files. No data cleaning is done here.
-- The data source files includes CRM and ERP data.
-- Silver layer includes two scripts (ddl and proc load). Ddl creates schmes that fits the data structure for cleaned data. Proc load truncates, transforms and cleanes the bronze layer data and inserts it into silver schemas.
-- Gold layer includes one script (ddl). Ddl creates view tables from the silver layer to produce cleaned, enriched and business ready datasets.
-
-# Data Catalog for Gold Layer
+## **Data Catalog for Gold Layer**
 
 ## Overview
 The Gold Layer is the business-level data representation, structured to support analytical and reporting use cases. It consists of **dimension tables** and **fact tables** for specific business metrics.
@@ -174,5 +171,12 @@ This document outlines the naming conventions used for schemas, tables, views, c
     - `load_silver` → Stored procedure for loading data into the Silver layer.
 
 
-# Credit
+## **Summary**
+- Three folders (bronze, silver, gold) and one file to initialize a database.
+- Bronze layer includes two scripts (ddl and proc load). Ddl creates schemas and proc load inserts data into schemas from external csv files. No data cleaning is done here.
+- The data source files includes CRM and ERP data.
+- Silver layer includes two scripts (ddl and proc load). Ddl creates schmes that fits the data structure for cleaned data. Proc load truncates, transforms and cleanes the bronze layer data and inserts it into silver schemas.
+- Gold layer includes one script (ddl). Ddl creates view tables from the silver layer to produce cleaned, enriched and business ready datasets.
+
+## **Credit**
 - Data with Baraa on Youtube
