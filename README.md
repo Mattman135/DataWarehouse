@@ -1,5 +1,9 @@
 # Data Warehouse Project 
 
+1. [test](#test)
+
+
+
 This portfolio project creates a data warehouse using SQL Server Management Studio 21. 
 The project uses the so called Medallion Architecture with Bronze, Silver and Gold layers.
 
@@ -25,6 +29,8 @@ What is a data warehouse?
 - The data source files includes CRM and ERP data.
 - Silver layer includes two scripts (ddl and proc load). Ddl creates schmes that fits the data structure for cleaned data. Proc load truncates, transforms and cleanes the bronze layer data and inserts it into silver schemas.
 - Gold layer includes one script (ddl). Ddl creates view tables from the silver layer to produce cleaned, enriched and business ready datasets.
+
+## **test**
 
 # Data Catalog for Gold Layer
 
