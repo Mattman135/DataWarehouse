@@ -171,7 +171,7 @@ This section outlines the naming conventions used for schemas, tables, views, co
 - Three folders (bronze, silver, gold) and one file to initialize a database.
 - Bronze layer includes two scripts (ddl and proc load). Ddl creates schemas and proc load inserts data into schemas from external csv files. No data cleaning is done here.
 - The data source files includes CRM and ERP data.
-- Silver layer includes two scripts (ddl and proc load). Ddl creates schmes that fits the data structure for cleaned data. Proc load truncates, transforms and cleanes the bronze layer data and inserts it into silver schemas.
+- Silver layer includes two scripts (ddl and proc load). Ddl creates schemas that fits the data structure for cleaned data. Proc load truncates, transforms and cleanes the bronze layer data and inserts it into silver schemas.
 - Gold layer includes one script (ddl). Ddl creates view tables from the silver layer to produce cleaned, enriched and business ready datasets.
 
 ## **Credit**
