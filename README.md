@@ -175,4 +175,4 @@ This section outlines the naming conventions used for schemas, tables, views, co
 - Gold layer includes one script (ddl). Ddl creates view tables from the silver layer to produce cleaned, enriched and business ready datasets.
 
 ## **Credit**
-- [Data with Baraa](#https://www.youtube.com/watch?v=9GVqKuTVANE&list=WL&index=25&t=3214s) on Youtube
+- [Data with Baraa](https://www.youtube.com/watch?v=9GVqKuTVANE&list=WL&index=25&t=3214s) on Youtube
